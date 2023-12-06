@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="add_product/">"Добавить продукт"</a>
+
+    <h1>Hello world</h1>
+    <div align = center>
+
+    {% for product in context_products %}
+        <image src = "{{ product.image.url }}" width="400px"></image>
+        <h2>{{ product.title }}</h2>
+
+    {% endfor %}
+</div>
+</body>
+</html>
+

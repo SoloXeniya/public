@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить продукт</title>
+</head>
+<body>
+
+
+    <a type="button" href="/" >Назад</a>
+    <form method="post" enctype = "multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image_product" id="" placeholder = "Фотография продука" required> 
+        <input type="text" name="title_product" id="" placeholder = "Название продука" required> 
+        <button type="submit">Отправить</button>
+
+    </form>
+    
+</body>
+</html>
